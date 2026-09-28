@@ -13,7 +13,7 @@
 
     <style>
         :root {
-            --bg: #f5f7f6;
+            --bg: #f4f7f6;
             --card: #ffffff;
             --text: #26302d;
             --muted: #65706c;
@@ -51,8 +51,8 @@
         }
 
         .hero,
-        .content-card,
-        .nav-container {
+        .nav-container,
+        .content-card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 16px;
@@ -74,7 +74,6 @@
         .subtitle {
             margin: 0;
             color: var(--muted);
-            font-size: 16px;
         }
 
         .meta-grid {
@@ -94,7 +93,6 @@
         .meta-item strong {
             display: block;
             color: var(--green-dark);
-            margin-bottom: 2px;
         }
 
         .alert,
@@ -141,7 +139,7 @@
         .nav-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 10px 18px;
+            gap: 8px 16px;
         }
 
         .nav-links a {
@@ -154,7 +152,6 @@
 
         .nav-links a:hover {
             background: var(--green-soft);
-            text-decoration: none;
         }
 
         .content-card {
@@ -202,15 +199,12 @@
             border: 1px solid #dfe5e2;
             padding: 2px 6px;
             border-radius: 6px;
-            font-size: 0.95em;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 16px 0;
-            overflow: hidden;
-            border-radius: 10px;
         }
 
         th,
@@ -252,14 +246,8 @@
 
         @media (max-width: 640px) {
             .page {
-                width: min(100% - 20px, 980px);
+                width: calc(100% - 20px);
                 margin: 10px auto 24px;
-            }
-
-            .hero,
-            .content-card,
-            .nav-container {
-                border-radius: 12px;
             }
 
             .hero,
@@ -283,1009 +271,322 @@
 </head>
 
 <body>
-    <main class="page">
 
-        <header class="hero">
-            <h1>EasyCamera — Termos de Uso e Política de Privacidade</h1>
+<main class="page">
 
-            <p class="subtitle">
-                Documento operacional da fase Beta do EasyCamera.
+    <header class="hero">
+
+        <h1>EasyCamera — Termos de Uso e Política de Privacidade</h1>
+
+        <p class="subtitle">
+            Documento operacional da fase Beta do EasyCamera.
+        </p>
+
+        <div class="meta-grid">
+
+            <div class="meta-item">
+                <strong>Versão</strong>
+                EasyCameraBeta1.1.33.2
+            </div>
+
+            <div class="meta-item">
+                <strong>Última revisão</strong>
+                22/09/2026
+            </div>
+
+            <div class="meta-item">
+                <strong>Status</strong>
+                Minuta aprovada para a fase Beta
+            </div>
+
+        </div>
+
+        <div class="alert">
+
+            <strong>IMPORTANTE</strong>
+
+            Este documento apresenta os Termos de Uso e a Política de Privacidade
+            do EasyCamera para a fase Beta. Antes da publicação comercial, o texto
+            deverá ser revisado juridicamente e conferido contra o comportamento
+            real da versão distribuída. Nenhuma disposição pretende afastar
+            direitos obrigatórios previstos na legislação brasileira.
+
+        </div>
+
+    </header>
+
+
+    <nav class="nav-container">
+
+        <h2>Índice de Navegação</h2>
+
+        <div class="nav-links">
+
+            <a href="#sec1">1. Aceitação dos Termos</a>
+            <a href="#sec2">2. Finalidade do EasyCamera</a>
+            <a href="#sec3">3. Responsabilidade do Usuário</a>
+            <a href="#sec4">4. Conta e Autenticação</a>
+            <a href="#sec5">5. Avaliação, Planos e Cobrança</a>
+            <a href="#sec6">6. Câmera, Vídeo e Replay</a>
+            <a href="#sec7">7. Microfone e EasyVoice</a>
+            <a href="#sec8">8. GPS e Localização</a>
+            <a href="#sec9">9. Mapas</a>
+            <a href="#sec10">10. Backup e Restauração</a>
+            <a href="#sec11">11. Google Drive</a>
+            <a href="#sec12">12. Arquivos e Disponibilidade</a>
+            <a href="#sec13">13. FishSense</a>
+            <a href="#sec14">14. Permissões do Dispositivo</a>
+            <a href="#sec15">15. Privacidade e Proteção de Dados</a>
+            <a href="#sec16">16. Categorias de Dados</a>
+            <a href="#sec17">17. Finalidades do Tratamento</a>
+            <a href="#sec18">18. Bases Legais</a>
+            <a href="#sec19">19. Armazenamento Local</a>
+            <a href="#sec20">20. Reconhecimento de Voz</a>
+            <a href="#sec21">21. Serviços de Terceiros</a>
+            <a href="#sec22">22. Compartilhamento de Dados</a>
+            <a href="#sec23">23. Compartilhamento pelo Usuário</a>
+            <a href="#sec24">24. Transferência Internacional</a>
+            <a href="#sec25">25. Retenção de Dados</a>
+            <a href="#sec26">26. Exclusão de Conta e Dados</a>
+            <a href="#sec27">27. Direitos do Titular</a>
+            <a href="#sec28">28. Crianças e Adolescentes</a>
+            <a href="#sec29">29. Segurança</a>
+            <a href="#sec30">30. Usos Proibidos</a>
+            <a href="#sec31">31. Propriedade Intelectual</a>
+            <a href="#sec32">32. Limitações Técnicas</a>
+            <a href="#sec33">33. Alterações e Atualizações</a>
+            <a href="#sec34">34. Google Play — Segurança</a>
+            <a href="#sec35">35. Contato</a>
+            <a href="#sec36">36. Declaração de Ciência</a>
+
+        </div>
+
+    </nav>
+
+
+    <article class="content-card">
+
+
+        <section id="sec1">
+
+            <h2>1. Aceitação dos Termos</h2>
+
+            <p>
+                Ao instalar, acessar ou utilizar o
+                <strong>EasyCameraBeta 1.1.33.2</strong>,
+                o usuário declara que leu e compreendeu estes Termos de Uso
+                e a Política de Privacidade e concorda em utilizar o aplicativo
+                de forma lícita, segura e responsável.
             </p>
 
-            <div class="meta-grid">
-                <div class="meta-item">
-                    <strong>Versão</strong>
-                    EasyCameraBeta1.1.33.2
-                </div>
-
-                <div class="meta-item">
-                    <strong>Última revisão</strong>
-                    22/09/2026
-                </div>
-
-                <div class="meta-item">
-                    <strong>Status</strong>
-                    Minuta aprovada para a fase Beta
-                </div>
-            </div>
-
-            <div class="alert">
-                <strong>IMPORTANTE</strong>
-                Este documento apresenta os Termos de Uso e a Política de Privacidade
-                do EasyCamera para a fase Beta. Antes da publicação comercial, o texto
-                deverá ser revisado juridicamente e conferido contra o comportamento
-                real da versão distribuída. Nenhuma disposição pretende afastar
-                direitos obrigatórios previstos na legislação brasileira.
-            </div>
-        </header>
-
-        <nav class="nav-container">
-            <h2>Índice de Navegação</h2>
-
-            <div class="nav-links">
-                <a href="#sec1">1. Aceitação dos Termos</a>
-                <a href="#sec2">2. Finalidade do EasyCamera</a>
-                <a href="#sec3">3. Responsabilidade do Usuário</a>
-                <a href="#sec4">4. Conta e Autenticação</a>
-                <a href="#sec5">5. Avaliação, Planos e Cobrança</a>
-                <a href="#sec6">6. Câmera, Vídeo e Replay</a>
-                <a href="#sec7">7. Microfone e EasyVoice</a>
-                <a href="#sec8">8. GPS e Localização</a>
-                <a href="#sec9">9. Mapas</a>
-                <a href="#sec10">10. Backup e Restauração</a>
-                <a href="#sec11">11. Google Drive</a>
-                <a href="#sec12">12. Arquivos e Disponibilidade</a>
-                <a href="#sec13">13. FishSense</a>
-                <a href="#sec14">14. Permissões do Dispositivo</a>
-                <a href="#sec15">15. Privacidade e Proteção de Dados</a>
-                <a href="#sec16">16. Categorias de Dados</a>
-                <a href="#sec17">17. Finalidades do Tratamento</a>
-                <a href="#sec18">18. Bases Legais</a>
-                <a href="#sec19">19. Armazenamento Local</a>
-                <a href="#sec20">20. Reconhecimento de Voz</a>
-                <a href="#sec21">21. Serviços de Terceiros</a>
-                <a href="#sec22">22. Compartilhamento de Dados</a>
-                <a href="#sec23">23. Compartilhamento pelo Usuário</a>
-                <a href="#sec24">24. Transferência Internacional</a>
-                <a href="#sec25">25. Retenção de Dados</a>
-                <a href="#sec26">26. Exclusão de Conta e Dados</a>
-                <a href="#sec27">27. Direitos do Titular</a>
-                <a href="#sec28">28. Crianças e Adolescentes</a>
-                <a href="#sec29">29. Segurança</a>
-                <a href="#sec30">30. Usos Proibidos</a>
-                <a href="#sec31">31. Propriedade Intelectual</a>
-                <a href="#sec32">32. Limitações Técnicas</a>
-                <a href="#sec33">33. Alterações e Atualizações</a>
-                <a href="#sec34">34. Google Play — Segurança</a>
-                <a href="#sec35">35. Contato</a>
-                <a href="#sec36">36. Declaração de Ciência</a>
-            </div>
-        </nav>
-
-        <article class="content-card">
-
-            <section id="sec1">
-                <h2>1. Aceitação dos Termos</h2>
-
-                <p>
-                    Ao instalar, acessar ou utilizar o <strong>EasyCameraBeta 1.1.33.2</strong>,
-                    o usuário declara que leu e compreendeu estes Termos de Uso e a
-                    Política de Privacidade e concorda em utilizar o aplicativo de forma
-                    lícita, segura e responsável.
-                </p>
-            </section>
-
-            <section id="sec2">
-                <h2>2. Finalidade do EasyCamera</h2>
-
-                <p>
-                    O EasyCamera é um aplicativo destinado ao registro de atividades de
-                    pesca e poderá oferecer, conforme a versão:
-                </p>
-
-                <ul>
-                    <li>fotografia;</li>
-                    <li>gravação de vídeo;</li>
-                    <li>replay;</li>
-                    <li>comandos de voz;</li>
-                    <li>GPS;</li>
-                    <li>rotas;</li>
-                    <li>pontos de pesca;</li>
-                    <li>capturas;</li>
-                    <li>mapas;</li>
-                    <li>histórico;</li>
-                    <li>backup;</li>
-                    <li>autenticação;</li>
-                    <li>assinatura;</li>
-                    <li>recursos inteligentes.</li>
-                </ul>
-
-                <p>
-                    O EasyCamera é ferramenta auxiliar e não substitui atenção,
-                    experiência, equipamentos de segurança, instrumentos de navegação,
-                    previsão meteorológica oficial ou cumprimento da legislação aplicável.
-                </p>
-            </section>
-
-            <section id="sec3">
-                <h2>3. Responsabilidade do Usuário e Uso Seguro</h2>
-
-                <p>
-                    O usuário é responsável pela forma como utiliza o aparelho e o
-                    EasyCamera. Deve evitar operar manualmente o telefone sempre que isso
-                    puder causar distração ou risco, inclusive durante:
-                </p>
-
-                <ul>
-                    <li>condução de veículos ou embarcações;</li>
-                    <li>deslocamento em terrenos perigosos;</li>
-                    <li>permanência próxima à água;</li>
-                    <li>uso de equipamentos de pesca.</li>
-                </ul>
-
-                <p>
-                    Comandos de voz, suporte peitoral, automações, GPS ou outros recursos
-                    não eliminam a obrigação do usuário de manter atenção e adotar medidas
-                    adequadas de segurança.
-                </p>
-            </section>
-
-            <section id="sec4">
-                <h2>4. Conta e Autenticação</h2>
-
-                <p>
-                    O EasyCamera poderá exigir autenticação por <strong>Conta Google</strong>
-                    para liberar o uso normal do aplicativo e/ou validar o estado de acesso,
-                    avaliação ou assinatura.
-                </p>
-
-                <p>
-                    A autenticação é realizada por serviços do Google e está sujeita também
-                    aos termos e políticas do respectivo provedor.
-                </p>
-
-                <p>
-                    O EasyCamera deverá solicitar somente os escopos necessários às
-                    funcionalidades efetivamente oferecidas.
-                </p>
-            </section>
-
-            <section id="sec5">
-                <h2>5. Avaliação Gratuita, Planos, Cobrança, Renovação e Cancelamento</h2>
-
-                <p>
-                    As condições comerciais definidas para o EasyCamera preveem uma
-                    avaliação gratuita de <strong>30 (trinta) dias</strong> e os seguintes
-                    planos:
-                </p>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Plano</th>
-                            <th>Valor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Mensal</strong></td>
-                            <td><strong>R$ 8,90/mês</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Anual</strong></td>
-                            <td><strong>R$ 94,90/ano</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>
-                    A avaliação gratuita será concedida <strong>uma única vez por usuário
-                    elegível</strong>. O usuário não poderá obter novo período gratuito
-                    após já ter utilizado a avaliação de 30 dias, salvo se o EasyCamera
-                    vier a oferecer futuramente uma promoção específica, com regras
-                    próprias claramente informadas.
-                </p>
-
-                <p>
-                    Quando o módulo comercial estiver habilitado, para iniciar a avaliação
-                    gratuita o usuário deverá escolher previamente entre o Plano Mensal e
-                    o Plano Anual. A assinatura ficará vinculada à Google Play e à Conta
-                    Google utilizada na contratação.
-                </p>
-
-                <p>
-                    Durante os 30 dias da avaliação não haverá cobrança do valor da
-                    assinatura. Quando a cobrança estiver habilitada, se o usuário não
-                    cancelar antes do término do período gratuito, a assinatura passará
-                    automaticamente para o primeiro período pago do plano previamente
-                    escolhido e a cobrança será processada pela Google Play conforme a
-                    forma de pagamento associada à conta do usuário.
-                </p>
-
-                <p>
-                    Após o início do período pago, a assinatura será renovada
-                    automaticamente ao término de cada ciclo mensal ou anual até que o
-                    usuário solicite o cancelamento.
-                </p>
-
-                <p>
-                    Caso o usuário cancele a assinatura durante a avaliação gratuita,
-                    nenhuma cobrança será realizada ao final dos 30 dias. O cancelamento
-                    não encerrará imediatamente o período gratuito: o usuário continuará
-                    com acesso até completar os 30 dias originalmente concedidos.
-                </p>
-
-                <p>
-                    Encerrada a avaliação, o acesso às funcionalidades vinculadas à
-                    assinatura será encerrado, salvo nova contratação de um plano pago.
-                </p>
-
-                <p>
-                    Após o usuário ter utilizado a avaliação gratuita, qualquer contratação
-                    posterior será realizada diretamente como assinatura paga, sem concessão
-                    de um novo teste gratuito, salvo promoção específica expressamente
-                    disponibilizada pelo EasyCamera.
-                </p>
-
-                <p>
-                    Caso o cancelamento ocorra durante um período já pago, o usuário
-                    continuará com acesso até o término do ciclo contratado e não haverá
-                    nova renovação após esse período, observadas as regras aplicáveis da
-                    plataforma de cobrança.
-                </p>
-
-                <p>
-                    Quando a cobrança estiver habilitada, o cancelamento deverá ser
-                    realizado pelos meios disponibilizados pela Google Play. A simples
-                    desinstalação do EasyCamera não representa cancelamento da assinatura.
-                </p>
-
-                <p>
-                    Os preços, condições, periodicidade, data de cobrança e demais
-                    informações da contratação deverão ser apresentados ao usuário antes
-                    da confirmação da assinatura. Eventuais alterações futuras de preço
-                    observarão as regras aplicáveis e serão informadas ao usuário quando
-                    exigido.
-                </p>
-
-                <div class="note">
-                    <strong>Fase Beta</strong>
-                    Enquanto o módulo de cobrança não estiver efetivamente habilitado na
-                    versão distribuída, esta seção representa as condições comerciais
-                    definidas para futura ativação e não significa que uma cobrança esteja
-                    sendo realizada pela versão Beta.
-                </div>
-            </section>
-
-            <section id="sec6">
-                <h2>6. Câmera, Vídeo e Replay</h2>
-
-                <p>
-                    Quando autorizado, o EasyCamera poderá acessar a câmera para
-                    fotografias, vídeos e replay conforme a configuração escolhida.
-                </p>
-
-                <p>
-                    O usuário é responsável por verificar se fotografar, filmar ou
-                    registrar terceiros é permitido no local e nas circunstâncias de uso
-                    e por respeitar direitos de imagem, voz e privacidade.
-                </p>
-            </section>
-
-            <section id="sec7">
-                <h2>7. Microfone e EasyVoice</h2>
-
-                <p>Quando autorizado, o microfone poderá ser utilizado para:</p>
-
-                <ul>
-                    <li>gravação de áudio em vídeos;</li>
-                    <li>reconhecimento de comandos do EasyVoice;</li>
-                    <li>teste e configuração do microfone.</li>
-                </ul>
-
-                <p>
-                    Durante uma pescaria ativa, recursos de voz podem permanecer
-                    preparados ou em funcionamento conforme a versão e as permissões
-                    concedidas, inclusive em determinadas situações com a tela apagada.
-                </p>
-
-                <p>
-                    O reconhecimento de voz pode depender do serviço de reconhecimento
-                    disponível no Android ou do provedor configurado no dispositivo. O
-                    processamento poderá variar entre local e remoto conforme aparelho,
-                    sistema e serviço utilizado.
-                </p>
-            </section>
-
-            <section id="sec8">
-                <h2>8. GPS, Localização, Rotas e Pontos</h2>
-
-                <p>
-                    Quando autorizado, o EasyCamera poderá utilizar localização aproximada
-                    e/ou exata para registrar:
-                </p>
-
-                <ul>
-                    <li>local da pescaria;</li>
-                    <li>trajetos;</li>
-                    <li>pontos de pesca;</li>
-                    <li>capturas;</li>
-                    <li>eventos;</li>
-                    <li>informações relacionadas ao mapa.</li>
-                </ul>
-
-                <p>
-                    Dados de localização podem apresentar imprecisões, atrasos ou
-                    indisponibilidade.
-                </p>
-
-                <div class="caution">
-                    <strong>Atenção</strong>
-                    O EasyCamera não deve ser utilizado como único instrumento de navegação
-                    ou segurança em emergências.
-                </div>
-            </section>
-
-            <section id="sec9">
-                <h2>9. Mapas</h2>
-
-                <p>
-                    O EasyCamera utiliza a biblioteca <strong>MapLibre</strong> para
-                    renderização de mapas.
-                </p>
-
-                <p>
-                    Os estilos e dados cartográficos das camadas principais são fornecidos
-                    pelo <strong>OpenFreeMap</strong>.
-                </p>
-
-                <p>
-                    Na camada de relevo, o EasyCamera também utiliza dados de elevação do
-                    conjunto <strong>Mapzen/Tilezen Terrain Tiles</strong>, disponibilizados
-                    por infraestrutura da <strong>Amazon Web Services (AWS)</strong>.
-                </p>
-
-                <p>
-                    O funcionamento e a disponibilidade desses recursos também podem estar
-                    sujeitos aos termos, políticas e condições dos respectivos provedores.
-                </p>
-            </section>
-
-            <section id="sec10">
-                <h2>10. Backup e Restauração</h2>
-
-                <p>
-                    O EasyCamera poderá oferecer backup <strong>Local</strong> e
-                    <strong>Nuvem</strong>.
-                </p>
-
-                <h3>Backup Local</h3>
-
-                <p>
-                    No modo Local, os dados destinados ao backup permanecem armazenados
-                    em recursos locais do aplicativo/dispositivo conforme a implementação.
-                </p>
-
-                <h3>Backup em Nuvem</h3>
-
-                <p>
-                    No modo Nuvem, mediante autorização do usuário, o EasyCamera utiliza
-                    uma área privada de dados do aplicativo no Google Drive para armazenar
-                    e restaurar o backup.
-                </p>
-
-                <p>O backup em nuvem pode incluir:</p>
-
-                <ul>
-                    <li>histórico de pescarias;</li>
-                    <li>dados e metadados necessários às funcionalidades;</li>
-                    <li>metadados de mapas offline;</li>
-                    <li>configurações do aplicativo.</li>
-                </ul>
-
-                <div class="note">
-                    <strong>Observação</strong>
-                    Fotografias e vídeos da galeria não fazem parte desse backup, salvo
-                    informação expressa em contrário em versão futura.
-                </div>
-            </section>
-
-            <section id="sec11">
-                <h2>11. Google Drive e Autorização</h2>
-
-                <p>
-                    O EasyCamera utiliza o escopo de autorização do Google Drive destinado
-                    à área privada de dados do próprio aplicativo:
-                    <code>drive.appdata</code>.
-                </p>
-
-                <p>
-                    Esse acesso é limitado aos dados criados pelo EasyCamera nessa área e
-                    <strong>não concede acesso geral aos demais arquivos pessoais do usuário
-                    no Google Drive</strong>.
-                </p>
-
-                <p>
-                    Quando o modo Nuvem estiver ativo e autorizado, o EasyCamera poderá
-                    criar, localizar, atualizar, baixar e restaurar o arquivo de backup
-                    necessário ao recurso dentro dessa área privada.
-                </p>
-            </section>
-
-            <section id="sec12">
-                <h2>12. Arquivos e Disponibilidade</h2>
-
-                <p>
-                    Fotografias, vídeos, replay, GPS, mapas e backup dependem de recursos
-                    do aparelho, permissões, armazenamento, bateria, compatibilidade e,
-                    em alguns casos, conectividade.
-                </p>
-
-                <p>
-                    Não é possível garantir que todo evento será capturado ou preservado
-                    em qualquer circunstância.
-                </p>
-            </section>
-
-            <section id="sec13">
-                <h2>13. FishSense e Recursos Inteligentes</h2>
-
-                <p>
-                    O <strong>FishSense</strong> e outros recursos inteligentes poderão ser
-                    disponibilizados em versões futuras ou posteriores do EasyCamera.
-                </p>
-
-                <p>
-                    Enquanto não estiverem efetivamente habilitados na versão publicada,
-                    esta cláusula não deve ser interpretada como declaração de tratamento
-                    de dados pelo FishSense.
-                </p>
-
-                <p>
-                    Quando disponibilizados, resultados e recomendações terão caráter
-                    auxiliar e não constituirão garantia de:
-                </p>
-
-                <ul>
-                    <li>captura de peixes;</li>
-                    <li>segurança;</li>
-                    <li>navegabilidade;</li>
-                    <li>condições climáticas;</li>
-                    <li>localização exata;</li>
-                    <li>sucesso da atividade.</li>
-                </ul>
-            </section>
-
-            <section id="sec14">
-                <h2>14. Permissões do Dispositivo</h2>
-
-                <p>O EasyCamera poderá solicitar permissões de:</p>
-
-                <ul>
-                    <li><strong>Câmera</strong>;</li>
-                    <li><strong>Microfone</strong>;</li>
-                    <li><strong>Localização</strong>;</li>
-                    <li><strong>Notificações</strong>.</li>
-                </ul>
-
-                <p>
-                    A negativa de uma permissão poderá impedir apenas as funções que
-                    realmente dependam daquele acesso.
-                </p>
-            </section>
-
-            <section id="sec15">
-                <h2>15. Privacidade e Proteção de Dados</h2>
-
-                <p>
-                    O tratamento de dados pessoais deverá observar a legislação aplicável,
-                    inclusive a <strong>Lei Geral de Proteção de Dados Pessoais — LGPD</strong>.
-                </p>
-
-                <p>O usuário deverá receber informações claras sobre:</p>
-
-                <ul>
-                    <li>dados tratados;</li>
-                    <li>finalidades;</li>
-                    <li>retenção;</li>
-                    <li>compartilhamento;</li>
-                    <li>direitos do titular.</li>
-                </ul>
-            </section>
-
-            <section id="sec16">
-                <h2>16. Categorias de Dados que Podem Ser Tratadas</h2>
-
-                <p>
-                    Dependendo das funcionalidades utilizadas, o EasyCamera poderá tratar:
-                </p>
-
-                <ul>
-                    <li>dados básicos de conta/autenticação recebidos do Google conforme escopos autorizados;</li>
-                    <li>localização aproximada e/ou exata;</li>
-                    <li>rotas, pontos e eventos de pescaria;</li>
-                    <li>fotografias, vídeos e áudio necessários às funcionalidades utilizadas;</li>
-                    <li>dados de histórico de pescaria;</li>
-                    <li>configurações do aplicativo;</li>
-                    <li>estado de avaliação, plano ou assinatura, quando aplicável;</li>
-                    <li>dados e metadados necessários ao backup;</li>
-                    <li>dados necessários ao funcionamento de mapas e recursos associados.</li>
-                </ul>
-            </section>
-
-            <section id="sec17">
-                <h2>17. Finalidades do Tratamento</h2>
-
-                <p>Os dados poderão ser utilizados para:</p>
-
-                <ul>
-                    <li>autenticação;</li>
-                    <li>execução de câmera, vídeo e replay;</li>
-                    <li>EasyVoice;</li>
-                    <li>registro de pescarias;</li>
-                    <li>GPS;</li>
-                    <li>histórico;</li>
-                    <li>mapas;</li>
-                    <li>backup;</li>
-                    <li>restauração;</li>
-                    <li>configurações;</li>
-                    <li>suporte;</li>
-                    <li>cumprimento de obrigações legais;</li>
-                    <li>exercício de direitos.</li>
-                </ul>
-            </section>
-
-            <section id="sec18">
-                <h2>18. Bases Legais</h2>
-
-                <p>
-                    A base legal aplicável dependerá da operação específica e poderá
-                    incluir, conforme o caso:
-                </p>
-
-                <ul>
-                    <li>execução de contrato;</li>
-                    <li>consentimento;</li>
-                    <li>cumprimento de obrigação legal ou regulatória;</li>
-                    <li>exercício regular de direitos;</li>
-                    <li>legítimo interesse, quando juridicamente aplicável.</li>
-                </ul>
-            </section>
-
-            <section id="sec19">
-                <h2>19. Armazenamento Local</h2>
-
-                <p>
-                    Dados como preferências, histórico, rotas, eventos e metadados poderão
-                    ser armazenados localmente no dispositivo.
-                </p>
-
-                <p>
-                    Fotografias e vídeos poderão ser salvos no armazenamento de
-                    mídia/galeria conforme a funcionalidade utilizada.
-                </p>
-            </section>
-
-            <section id="sec20">
-                <h2>20. Reconhecimento de Voz</h2>
-
-                <p>
-                    O EasyVoice utiliza recursos de captura de áudio e reconhecimento
-                    disponíveis no Android.
-                </p>
-
-                <p>
-                    Conforme o dispositivo e o serviço configurado, o áudio necessário ao
-                    reconhecimento poderá ser processado localmente ou por infraestrutura
-                    do provedor do serviço.
-                </p>
-            </section>
-
-            <section id="sec21">
-                <h2>21. Serviços e Tecnologias de Terceiros</h2>
-
-                <p>
-                    Conforme as funcionalidades efetivamente disponibilizadas, o EasyCamera
-                    poderá utilizar:
-                </p>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Serviço / Tecnologia</th>
-                            <th>Finalidade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Google / Google Play Services</strong></td>
-                            <td>Autenticação e serviços de localização</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Drive</strong></td>
-                            <td>Backup em nuvem na área privada de dados do aplicativo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Google Play</strong></td>
-                            <td>Distribuição e, quando implementado o módulo comercial, processamento de assinaturas e cobranças</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Android</strong></td>
-                            <td>Serviço de reconhecimento de voz do dispositivo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>AndroidX / CameraX</strong></td>
-                            <td>Recursos de câmera, vídeo, interface e componentes do aplicativo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>MapLibre</strong></td>
-                            <td>Renderização de mapas</td>
-                        </tr>
-                        <tr>
-                            <td><strong>OpenFreeMap</strong></td>
-                            <td>Estilos e dados cartográficos das camadas principais</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Mapzen/Tilezen Terrain Tiles (AWS)</strong></td>
-                            <td>Dados de elevação utilizados na camada de relevo</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>
-                    O uso desses serviços poderá estar sujeito também aos termos, políticas
-                    de privacidade e condições dos respectivos fornecedores.
-                </p>
-            </section>
-
-            <section id="sec22">
-                <h2>22. Compartilhamento de Dados</h2>
-
-                <div class="note">
-                    <strong>O EasyCamera não vende dados pessoais.</strong>
-                </div>
-
-                <p>
-                    Dados poderão ser compartilhados ou disponibilizados a terceiros apenas
-                    quando necessário para:
-                </p>
-
-                <ul>
-                    <li>executar uma funcionalidade solicitada;</li>
-                    <li>autenticação;</li>
-                    <li>backup;</li>
-                    <li>cobrança, quando aplicável;</li>
-                    <li>mapa/localização;</li>
-                    <li>reconhecimento de voz;</li>
-                    <li>cumprimento de obrigação legal;</li>
-                    <li>exercício de direitos.</li>
-                </ul>
-            </section>
-
-            <section id="sec23">
-                <h2>23. Compartilhamento Iniciado pelo Usuário</h2>
-
-                <p>
-                    Quando o usuário decidir compartilhar fotografias, vídeos, localização,
-                    pontos de pesca ou outras informações com terceiros, redes sociais ou
-                    outros aplicativos, deverá avaliar previamente o conteúdo e o destino
-                    do compartilhamento.
-                </p>
-            </section>
-
-            <section id="sec24">
-                <h2>24. Transferência Internacional</h2>
-
-                <p>
-                    Serviços globais de terceiros podem processar dados em infraestrutura
-                    localizada fora do Brasil.
-                </p>
-
-                <p>
-                    Quando houver transferência internacional, ela deverá observar a LGPD
-                    e as regras aplicáveis.
-                </p>
-            </section>
-
-            <section id="sec25">
-                <h2>25. Retenção de Dados</h2>
-
-                <p>Os dados serão mantidos somente pelo período necessário para:</p>
-
-                <ul>
-                    <li>funcionamento das funcionalidades utilizadas pelo usuário;</li>
-                    <li>cumprimento das finalidades informadas nesta Política;</li>
-                    <li>atendimento de obrigações legais;</li>
-                    <li>exercício regular de direitos.</li>
-                </ul>
-
-                <p>
-                    Dados armazenados localmente permanecerão no dispositivo conforme o
-                    uso do aplicativo e as ações realizadas pelo usuário.
-                </p>
-
-                <p>
-                    Dados de backup em nuvem permanecerão associados ao recurso de backup
-                    enquanto necessários à sua finalidade e sujeitos às condições do
-                    serviço Google Drive utilizado pelo EasyCamera.
-                </p>
-
-                <p>
-                    Encerrada a finalidade do tratamento, os dados pessoais deverão ser
-                    eliminados dentro dos limites técnicos aplicáveis, ressalvadas as
-                    hipóteses em que sua conservação seja permitida ou exigida pela
-                    legislação.
-                </p>
-            </section>
-
-            <section id="sec26">
-                <h2>26. Exclusão de Conta e Dados</h2>
-
-                <p>
-                    Na versão Beta, enquanto o mecanismo direto de exclusão estiver em
-                    implementação, o usuário poderá solicitar a exclusão de dados pessoais
-                    associados ao EasyCamera pelo canal de privacidade:
-                </p>
-
-                <p class="email">suporte.easycamera@gmail.com</p>
-
-                <p>
-                    A exclusão observará as hipóteses legais de conservação.
-                </p>
-
-                <p>
-                    Antes da publicação comercial, o EasyCamera deverá disponibilizar
-                    mecanismo específico para exclusão da conta e dos dados associados
-                    diretamente pelo aplicativo, além de recurso externo que permita ao
-                    usuário solicitar a exclusão mesmo sem acesso ao aplicativo.
-                </p>
-
-                <p>A exclusão da conta e dos dados do EasyCamera:</p>
-
-                <ul>
-                    <li><strong>não exclui a Conta Google</strong> utilizada para autenticação;</li>
-                    <li><strong>não cancela automaticamente</strong> eventual assinatura administrada pela Google Play.</li>
-                </ul>
-
-                <p>
-                    Assinaturas ativas, quando existentes, deverão ser gerenciadas pelos
-                    recursos disponibilizados pela Google Play.
-                </p>
-
-                <p>Quando aplicável ao fluxo implementado, a exclusão poderá abranger:</p>
-
-                <ul>
-                    <li>dados locais associados ao EasyCamera;</li>
-                    <li>backup privado do aplicativo no Google Drive;</li>
-                    <li>revogação do vínculo/autorização concedido ao EasyCamera.</li>
-                </ul>
-
-                <p>
-                    Tudo será realizado respeitando as hipóteses legais de conservação.
-                </p>
-
-                <p>
-                    Dados anteriormente excluídos não deverão ser restaurados
-                    automaticamente caso o usuário volte a utilizar o EasyCamera no futuro.
-                </p>
-            </section>
-
-            <section id="sec27">
-                <h2>27. Direitos do Titular</h2>
-
-                <p>
-                    Nos termos da LGPD e conforme aplicável, o titular poderá solicitar:
-                </p>
-
-                <ul>
-                    <li>confirmação da existência de tratamento;</li>
-                    <li>acesso;</li>
-                    <li>correção;</li>
-                    <li>anonimização;</li>
-                    <li>bloqueio ou eliminação quando cabível;</li>
-                    <li>portabilidade;</li>
-                    <li>informação sobre compartilhamento;</li>
-                    <li>revogação do consentimento;</li>
-                    <li>oposição;</li>
-                    <li>revisão de decisões automatizadas, quando aplicável.</li>
-                </ul>
-
-                <h3>Canal de Privacidade / LGPD</h3>
-
-                <p class="email">suporte.easycamera@gmail.com</p>
-            </section>
-
-            <section id="sec28">
-                <h2>28. Crianças e Adolescentes</h2>
-
-                <p>
-                    O EasyCamera poderá ser utilizado por crianças e adolescentes somente
-                    sob autorização, supervisão e responsabilidade dos pais ou responsável
-                    legal, observada a legislação aplicável.
-                </p>
-
-                <p>
-                    Quando houver tratamento de dados pessoais de crianças, serão
-                    observadas as exigências específicas da LGPD, inclusive:
-                </p>
-
-                <ul>
-                    <li>o melhor interesse da criança;</li>
-                    <li>quando aplicável, consentimento específico e em destaque de pelo menos um dos pais ou responsável legal.</li>
-                </ul>
-
-                <p>
-                    Os pais ou responsáveis deverão orientar e supervisionar o uso do
-                    aplicativo, especialmente quanto a:
-                </p>
-
-                <ul>
-                    <li>câmera;</li>
-                    <li>microfone;</li>
-                    <li>localização;</li>
-                    <li>compartilhamento de informações;</li>
-                    <li>atividades realizadas durante a pescaria.</li>
-                </ul>
-            </section>
-
-            <section id="sec29">
-                <h2>29. Segurança</h2>
-
-                <p>
-                    O EasyCamera deverá adotar medidas técnicas e organizacionais
-                    compatíveis com os riscos do tratamento.
-                </p>
-
-                <p>
-                    Nenhum sistema é absolutamente imune a falhas ou incidentes.
-                </p>
-            </section>
-
-            <section id="sec30">
-                <h2>30. Usos Proibidos</h2>
-
-                <p>É proibido utilizar o EasyCamera para:</p>
-
-                <ul>
-                    <li>praticar atos ilícitos;</li>
-                    <li>violar direitos de terceiros;</li>
-                    <li>praticar pesca em desacordo com a legislação;</li>
-                    <li>contornar normas ambientais, de navegação ou de segurança;</li>
-                    <li>colocar pessoas em risco;</li>
-                    <li>tentar comprometer o aplicativo e seus serviços.</li>
-                </ul>
-            </section>
-
-            <section id="sec31">
-                <h2>31. Propriedade Intelectual</h2>
-
-                <p>
-                    A marca <strong>EasyCamera</strong>, o software
-                    <strong>EasyCamera</strong>, o software <strong>EasyVoice</strong>,
-                    o software <strong>FishSense</strong>, código, identidade visual,
-                    interface, documentação e demais ativos próprios pertencem aos
-                    respectivos titulares.
-                </p>
-
-                <p>
-                    Tecnologias e serviços de terceiros permanecem sujeitos às licenças
-                    e termos de seus próprios titulares.
-                </p>
-            </section>
-
-            <section id="sec32">
-                <h2>32. Limitações Técnicas e Responsabilidade</h2>
-
-                <p>
-                    Software, dispositivos móveis, câmera, GPS, reconhecimento de voz,
-                    redes, bateria, armazenamento e serviços externos estão sujeitos a
-                    limitações e falhas.
-                </p>
-
-                <p>
-                    Nenhuma disposição destes Termos exclui responsabilidade que não possa
-                    ser legalmente excluída, nem afasta direitos obrigatórios assegurados
-                    pela legislação brasileira.
-                </p>
-            </section>
-
-            <section id="sec33">
-                <h2>33. Alterações e Atualizações</h2>
-
-                <p>
-                    Estes Termos e a Política de Privacidade poderão ser atualizados para
-                    refletir mudanças relacionadas a:
-                </p>
-
-                <ul>
-                    <li>legislação;</li>
-                    <li>novas funcionalidades;</li>
-                    <li>fornecedores;</li>
-                    <li>tratamentos de dados;</li>
-                    <li>backup;</li>
-                    <li>autenticação;</li>
-                    <li>assinaturas;</li>
-                    <li>integração do FishSense.</li>
-                </ul>
-
-                <p>
-                    Quando uma alteração exigir nova ciência ou consentimento, o EasyCamera
-                    deverá apresentá-la adequadamente ao usuário.
-                </p>
-            </section>
-
-            <section id="sec34">
-                <h2>34. Google Play — Segurança dos Dados</h2>
-
-                <p>
-                    As informações declaradas na seção <strong>Segurança dos Dados</strong>
-                    da Google Play deverão corresponder ao comportamento efetivo da versão
-                    do aplicativo distribuída, inclusive quanto a:
-                </p>
-
-                <ul>
-                    <li>permissões;</li>
-                    <li>SDKs;</li>
-                    <li>coleta;</li>
-                    <li>compartilhamento;</li>
-                    <li>retenção;</li>
-                    <li>exclusão.</li>
-                </ul>
-            </section>
-
-            <section id="sec35">
-                <h2>35. Contato</h2>
-
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Responsável / Controlador</th>
-                            <td>Leonardo Naves de Oliveira — pessoa física</td>
-                        </tr>
-
-                        <tr>
-                            <th>E-mail de suporte</th>
-                            <td class="email">suporte.easycamera@gmail.com</td>
-                        </tr>
-
-                        <tr>
-                            <th>Canal de privacidade / LGPD</th>
-                            <td class="email">suporte.easycamera@gmail.com</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section id="sec36">
-                <h2>36. Declaração de Ciência e Aceite</h2>
-
-                <p>Ao selecionar <strong>“Li e Aceito”</strong>, o usuário declara que:</p>
-
-                <ul>
-                    <li>teve acesso aos Termos de Uso e à Política de Privacidade;</li>
-                    <li>compreendeu as principais finalidades das permissões;</li>
-                    <li>reconhece as limitações técnicas dos recursos;</li>
-                    <li>compromete-se a utilizar o EasyCamera de forma lícita e segura.</li>
-                </ul>
-
-                <h3>Texto da tela de aceite</h3>
-
-                <div class="accept-box">
-                    “Li e concordo com os Termos de Uso e com a Política de Privacidade do EasyCamera.”
-                </div>
-            </section>
-
-        </article>
-
-        <footer>
-            <strong>EasyCamera</strong><br>
-            Registrando os seus melhores momentos!<br><br>
-            <small>
-                Documento para a fase Beta — sujeito a revisão jurídica antes da
-                publicação comercial.
-            </small>
-        </footer>
-
-    </main>
-</body>
-</html>
+        </section>
+
+
+        <section id="sec2">
+
+            <h2>2. Finalidade do EasyCamera</h2>
+
+            <p>
+                O EasyCamera é um aplicativo destinado ao registro de atividades
+                de pesca e poderá oferecer, conforme a versão:
+            </p>
+
+            <ul>
+                <li>fotografia;</li>
+                <li>gravação de vídeo;</li>
+                <li>replay;</li>
+                <li>comandos de voz;</li>
+                <li>GPS;</li>
+                <li>rotas;</li>
+                <li>pontos de pesca;</li>
+                <li>capturas;</li>
+                <li>mapas;</li>
+                <li>histórico;</li>
+                <li>backup;</li>
+                <li>autenticação;</li>
+                <li>assinatura;</li>
+                <li>recursos inteligentes.</li>
+            </ul>
+
+            <p>
+                O EasyCamera é ferramenta auxiliar e não substitui atenção,
+                experiência, equipamentos de segurança, instrumentos de navegação,
+                previsão meteorológica oficial ou cumprimento da legislação aplicável.
+            </p>
+
+        </section>
+
+
+        <section id="sec3">
+
+            <h2>3. Responsabilidade do Usuário e Uso Seguro</h2>
+
+            <p>
+                O usuário é responsável pela forma como utiliza o aparelho e
+                o EasyCamera.
+            </p>
+
+            <p>
+                Deve evitar operar manualmente o telefone sempre que isso puder
+                causar distração ou risco, inclusive durante:
+            </p>
+
+            <ul>
+                <li>condução de veículos ou embarcações;</li>
+                <li>deslocamento em terrenos perigosos;</li>
+                <li>permanência próxima à água;</li>
+                <li>uso de equipamentos de pesca.</li>
+            </ul>
+
+            <p>
+                Comandos de voz, suporte peitoral, automações, GPS ou outros
+                recursos não eliminam a obrigação do usuário de manter atenção
+                e adotar medidas adequadas de segurança.
+            </p>
+
+        </section>
+
+
+        <section id="sec4">
+
+            <h2>4. Conta e Autenticação</h2>
+
+            <p>
+                O EasyCamera poderá exigir autenticação por
+                <strong>Conta Google</strong>
+                para liberar o uso normal do aplicativo e/ou validar o estado
+                de acesso, avaliação ou assinatura.
+            </p>
+
+            <p>
+                A autenticação é realizada por serviços do Google e está sujeita
+                também aos termos e políticas do respectivo provedor.
+            </p>
+
+            <p>
+                O EasyCamera deverá solicitar somente os escopos necessários
+                às funcionalidades efetivamente oferecidas.
+            </p>
+
+        </section>
+
+
+        <section id="sec5">
+
+            <h2>
+                5. Avaliação Gratuita, Planos, Cobrança,
+                Renovação e Cancelamento
+            </h2>
+
+            <p>
+                As condições comerciais definidas para o EasyCamera preveem
+                uma avaliação gratuita de <strong>30 (trinta) dias</strong>
+                e os seguintes planos:
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>Mensal</strong></td>
+                        <td><strong>R$ 8,90/mês</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Anual</strong></td>
+                        <td><strong>R$ 94,90/ano</strong></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <p>
+                A avaliação gratuita será concedida
+                <strong>uma única vez por usuário elegível</strong>.
+                O usuário não poderá obter novo período gratuito após já ter
+                utilizado a avaliação de 30 dias, salvo se o EasyCamera vier
+                a oferecer futuramente uma promoção específica, com regras
+                próprias claramente informadas.
+            </p>
+
+            <p>
+                Quando o módulo comercial estiver habilitado, para iniciar
+                a avaliação gratuita o usuário deverá escolher previamente
+                entre o Plano Mensal e o Plano Anual.
+                A assinatura ficará vinculada à Google Play e à Conta Google
+                utilizada na contratação.
+            </p>
+
+            <p>
+                Durante os 30 dias da avaliação não haverá cobrança do valor
+                da assinatura.
+            </p>
+
+            <p>
+                Quando a cobrança estiver habilitada, se o usuário não cancelar
+                antes do término do período gratuito, a assinatura passará
+                automaticamente para o primeiro período pago do plano previamente
+                escolhido e a cobrança será processada pela Google Play conforme
+                a forma de pagamento associada à conta do usuário.
+            </p>
+
+            <p>
+                Após o início do período pago, a assinatura será renovada
+                automaticamente ao término de cada ciclo mensal ou anual
+                até que o usuário solicite o cancelamento.
+            </p>
+
+            <p>
+                Caso o usuário cancele a assinatura durante a avaliação gratuita,
+                nenhuma cobrança será realizada ao final dos 30 dias.
+            </p>
+
+            <p>
+                O cancelamento não encerrará imediatamente o período gratuito:
+                o usuário continuará com acesso até completar os 30 dias
+                originalmente concedidos.
+            </p>
+
+            <p>
+                Encerrada a avaliação, o acesso às funcionalidades vinculadas
+                à assinatura será encerrado, salvo nova contratação de um plano pago.
+            </p>
+
+            <p>
+                Após o usuário ter utilizado a avaliação gratuita, qualquer
+                contratação posterior será realizada diretamente como assinatura
+                paga, sem concessão de um novo teste gratuito, salvo promoção
+                específica expressamente disponibilizada pelo EasyCamera.
+            </p>
+
+            <p>
+                Caso o cancelamento ocorra durante um período já pago,
+                o usuário continuará com acesso até o término do ciclo contratado
+                e não haverá nova renovação após esse período, observadas
+                as regras aplicáveis da plataforma de cobrança.
+            </p>
+
+            <p>
+                Quando a cobrança estiver habilitada, o cancelamento deverá
+                ser realizado pelos meios disponibilizados pela Google Play.
+                A simples desinstalação do EasyCamera não representa
+                cancelamento da assinatura.
+            </p>
+
+            <p>
+                Os preços, condições, periodicidade, data de cobrança e demais
+                informações da contratação deverão ser apresentados ao usuário
+                antes da confirmação da assinatura.
+            </p>
+
+            <p>
+                Eventuais alterações futuras de preço
